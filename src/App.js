@@ -3,9 +3,16 @@ import './App.css';
 
 class App extends Component {
   render(){
+    
+const name =  "John Smith";
+const loading = false;
+const showName = true;
+
+
     return (
       <div className="App">
-       <h1>Run, run and don't look back</h1>
+        {loading ? <h4>Loading....</h4> :  <h1>Hello {showName && name }</h1>}
+      
       </div>
     );
   }
